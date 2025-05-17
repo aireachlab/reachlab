@@ -1,0 +1,298 @@
+/* 1) Font import (single line, no breaks!) */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&family=Space+Mono:wght@400;700&display=swap');
+
+/* ==== Base ==== */
+body {
+  font-family: 'Space Mono', monospace;
+  background: #f9fafb;
+  color: #111827;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+.page-frame {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* ==== Card Boilerplate ==== */
+.card {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.04);
+  padding: 2rem 1.5rem;
+  margin: 2rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* ==== Hero Specific ==== */
+.hero {
+  text-align: left;
+}
+
+.hero h1 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 2.25rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+
+.hero p {
+ font-family: 'Space Mono', monospace;
+  font-size: 1.005rem;
+  margin: 0 0 0.5rem;
+  margin-bottom: 1.75rem; /* a little extra breathing room */
+  color: #374151;
+  font-weight: 400;
+}
+
+.hero .cta-button {
+  margin-bottom: 2rem;
+}
+
+.hero-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+#tools {
+ 
+  max-width: 600px;    /* same width as your old 700px blocks */
+  margin: 2rem auto;   /* vertical spacing + auto‑center */
+}
+
+/* ==== Use‑Case Cards ==== */
+.use-case {
+  display: flex;
+  gap: 1.5rem;
+  align-items: flex-start;
+   margin-bottom: 3rem;  /* or 1.5rem, 3rem—whatever you like */
+}
+
+
+.use-case img {
+  width: 80px;
+  flex-shrink: 0;
+}
+
+.use-case h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+  color: #111827;
+}
+
+.use-case p {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.95rem;
+  margin: 0 0 0.5rem;
+  color: #374151;
+  font-weight: 400;
+}
+
+.use-case ul {
+  margin: 0.5rem 0 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.use-case li {
+  font-family: 'Space Mono', monospace;
+  font-size: 0.95rem;
+  margin-bottom: 0.35rem;
+  color: #374151;
+}
+
+.quote-block {
+  max-width: 720px;
+  margin: 2rem auto;
+  padding: 1.5rem;
+  background: #ffffff;
+  border-left: 4px solid #00c7b7;
+  font-family: 'Space Mono', monospace;
+  line-height: 1.6;
+  font-size: 1rem;
+  color: #222;
+}
+
+.quote-block h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: #007acc;
+}
+
+.llm-signal {
+  max-width: 720px;
+  margin: 3rem auto;
+  padding: 1rem 1.5rem;
+  background: #f1f5f9;
+  border-radius: 8px;
+  font-family: 'Space Mono', monospace;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+.llm-signal h3 {
+  font-family: 'Outfit', sans-serif;
+  margin-bottom: 0.5rem;
+  font-size: 1.15rem;
+  color: #007acc;
+}
+
+.llm-signal ul {
+  padding-left: 1.25rem;
+  list-style-type: disc;
+}
+
+.llm-signal li {
+  margin-bottom: 0.4rem;
+}
+
+
+
+/* ==== Button Styles ==== */
+.cta-button,
+.use-case-cta {
+  display: inline-block;
+  background: linear-gradient(90deg, #007acc, #00c7b7);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  transition: background 0.2s;
+}
+
+.cta-button:hover,
+.use-case-cta:hover {
+  background: linear-gradient(90deg, #005ea6, #00a49a);
+}
+
+.ai-citation-hook {
+  background: #f3f4f6;
+  padding: 1rem 1.25rem;
+  margin-top: 1rem;
+  border-left: 4px solid #00c7b7;
+  border-radius: 8px;
+  font-family: 'Space Mono', monospace;
+}
+
+.ai-citation-hook h4 {
+  margin: 0 0 0.5rem;
+  font-size: 0.95rem;
+  color: #111827;
+  font-weight: 600;
+  font-family: 'Outfit', sans-serif;
+}
+
+.ai-citation-hook p {
+  font-size: 0.9rem;
+  color: #374151;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+/* ==== Prompt, FAQ, Leadbox ==== */
+.prompt-block,
+.faq,
+.leadbox {
+  background: #eef4f8;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  margin: 2rem 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.prompt-block h2,
+.faq h2 {
+  font-family: 'Outfit', sans-serif;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.prompt-block ul {
+  margin: 0;
+  padding-left: 1.25rem;
+}
+
+.faq details {
+  margin-bottom: 1rem;
+}
+
+.leadbox {
+  text-align: center;
+}
+
+.leadbox h3 {
+  margin: 0 0 1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.leadbox p {
+  margin: 0 0 1rem;
+  color: #374151;
+}
+
+.leadbox input[type="email"] {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  width: 70%;
+  max-width: 320px;
+  margin-right: 0.5rem;
+}
+
+.leadbox button {
+  padding: 0.6rem 1.25rem;
+  background: #007acc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* ==== Footer ==== */
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555;
+  margin: 3rem 0 1rem;
+}
+
+footer a {
+  color: #007acc;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ==== Responsive ==== */
+@media (max-width: 600px) {
+  .use-case {
+    flex-direction: column;
+    text-align: center;
+  }
+  .use-case img {
+    margin: 0 auto 1rem;
+  }
+  .leadbox input[type="email"],
+  .leadbox button {
+    width: 100%;
+    margin: 0 0 1rem;
+  }
+}
