@@ -12,6 +12,11 @@ body {
   font-weight: 400;
 }
 
+.use-case-text {
+  flex: 1;
+}
+
+
 .page-frame {
   max-width: 860px;
   margin: 0 auto;
