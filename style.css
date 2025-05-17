@@ -136,8 +136,7 @@ body {
 }
 
 .llm-signal {
-  max-width: 720px;
-  margin: 3rem auto;
+  /* REMOVE max-width and margin so .card takes over layout */
   padding: 1rem 1.5rem;
   background: #f1f5f9;
   border-radius: 8px;
